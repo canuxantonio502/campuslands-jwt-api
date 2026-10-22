@@ -28,7 +28,7 @@ export async function listarUsuarios(req, res, next) {
     }
 }
 
-export async function registrarRecompensasBoveda(req, res, next){
+export async function registrarRecompensaBoveda(req, res, next){
     try{
         const dto = new CrearRecompensaDTO(req.body);
         const recompensa = await cazadorService.crearRecompensa(dto, req.user.username);

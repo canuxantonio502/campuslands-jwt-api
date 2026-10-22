@@ -1,9 +1,5 @@
 import { Router } from "express";
-import {
-    autenticarUsuario,
-    listarUsuarios,
-    registrarRecompensaBoveda,
-} from "../controllers/auth.controller.js";
+import { autenticarUsuario, listarUsuarios, registrarRecompensaBoveda } from "../controllers/auth.controller.js";
 import {
     autenticarLocal,
     autenticarJWT,

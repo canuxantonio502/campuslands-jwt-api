@@ -2,10 +2,7 @@ import express from "express";
 import cors from "cors";
 import { configurarPassport } from "./config/passport.js";
 import { authRouter } from "./routes/auth.routes.js";
-import {
-    manejarError,
-    rutaNoEncontrada,
-} from "./middlewares/error.middleware.js";
+import { manejarError, rutaNoEncontrada } from "./middlewares/error.middleware.js";
 
 const API_VERSION = "1.0.0";
 const app = express();
